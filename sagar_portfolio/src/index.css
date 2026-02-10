@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --card: #f8fafcaf;
+  --text: #0f172a;
+  --accent: #144fd8;
+}
+
+.dark {
+  --bg: #0f172a;
+  --card: #020617;
+  --text: #e5e7eb;
+  --accent: #38bdf8;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@layer components {
+  .section {
+    padding: 5rem 1.5rem;
+    max-width: 72rem;
+    margin: auto;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    background-color: var(--card);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(148,163,184,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+  }
+
+  .btn-primary {
+    background-color: var(--accent);
+    color: #020617;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+  }
+}
