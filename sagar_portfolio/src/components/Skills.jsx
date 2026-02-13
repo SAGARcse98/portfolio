@@ -1,90 +1,59 @@
-import { FaReact, FaNodeJs, FaLinux, FaDatabase } from "react-icons/fa"
-import { SiMongodb, SiJavascript, SiPython, SiNextdotjs, SiRedux, SiRazorpay} from "react-icons/si"
-
-const skills = [
-  { icon: <FaReact />, name: "React" },
-  { icon: <FaNodeJs />, name: "Node.js" },
-  { icon: <SiMongodb />, name: "MongoDB" },
-  { icon: <SiJavascript />, name: "JavaScript" },
-  { icon: <SiPython />, name: "Python" },
-  { icon: <FaLinux />, name: "Linux" },
-  { icon: <FaDatabase />, name: "Database" },
-  { icon: <SiNextdotjs />, name: "Next" },
-  { icon: <SiRedux />, name: "Redux" },
-  { icon: <SiRazorpay />, name: "Razorpay" },
-  
-  
+const skillGroups = [
+  {
+    title: "Programming",
+    items: ["C", "C++", "Python", "JavaScript (ES6)", "Shell Scripting"],
+  },
+  {
+    title: "HPC & Parallel Computing",
+    items: [
+      "CUDA",
+      "OpenMP",
+      "MPI",
+      "SLURM",
+      "RAPL",
+      "NVML",
+      "Parallel Computing",
+      "Multithreading",
+      "GPU Acceleration",
+      "Performance Optimization",
+    ],
+  },
+  {
+    title: "Frontend",
+    items: ["React.js", "Next.js", "Redux", "Context API", "HTML5", "CSS3", "Tailwind CSS"],
+  },
+  {
+    title: "Backend",
+    items: ["Node.js", "Express.js", "REST APIs"],
+  },
+  {
+    title: "Tools & Platforms",
+    items: ["Linux", "Git", "GitHub", "Debugging", "Profiling", "MongoDB"],
+  },
 ]
 
 export default function Skills() {
   return (
-    <section className="section">
-      <h2 className="section-title">Tech Stack</h2>
+    <section id="skills" className="section">
+      <div className="section-header">
+        <span className="section-kicker">Capability Matrix</span>
+        <h2 className="section-title">Skills</h2>
+      </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
-        {skills.map(skill => (
-          <div key={skill.name} className="card">
-            <div className="text-4xl mb-2" style={{ color: "var(--accent)" }}>
-              {skill.icon}
+      <div className="grid md:grid-cols-2 gap-5">
+        {skillGroups.map((group) => (
+          <article key={group.title} className="card">
+            <h3 className="text-xl font-bold">{group.title}</h3>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {group.items.map((item) => (
+                <span key={item} className="badge">
+                  {item}
+                </span>
+              ))}
             </div>
-            {skill.name}
-          </div>
+          </article>
         ))}
       </div>
     </section>
   )
 }
-
-
-
-
-
-
-
-// const skills = [
-//   "ReactJS", "NextJS", "JavaScript", "Node.js", "MongoDB",
-//   "Redux", "Context API", "Python", "CUDA", "OpenMP",
-//   "MPI", "REST APIs", "Razorpay", "Linux"
-// ]
-
-// export default function Skills() {
-//   return (
-//     <section id="skills" className="section">
-//       <h2 className="section-title">Skills</h2>
-//       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-//         {skills.map(skill => (
-//           <div key={skill} className="card text-center">
-//             {skill}
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   )
-// }
-
-
-
-// const skills = [
-//   "ReactJS", "NextJS", "JavaScript (ES6)", "Node.js", "MongoDB",
-//   "Redux", "Context API", "Python", "CUDA", "OpenMP", "MPI",
-//   "REST APIs", "Razorpay", "Linux"
-// ];
-
-// export default function Skills() {
-//   return (
-//     <section className="py-20 px-6">
-//       <h2 className="section-title">Skills</h2>
-
-//       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
-//         {skills.map((skill) => (
-//           <div
-//             key={skill}
-//             className="p-4 rounded-xl bg-white shadow-md hover:scale-105 transition"
-//           >
-//             {skill}
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
