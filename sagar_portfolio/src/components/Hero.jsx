@@ -4,6 +4,7 @@ import Reveal from "./Reveal"
 
 export default function Hero() {
   const techChips = ["React", "Node.js", "CUDA", "OpenMP", "SLURM", "MongoDB"]
+  const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`
 
   return (
     <Reveal>
@@ -39,7 +40,7 @@ export default function Hero() {
               <a href="#projects" className="btn-primary">
                 View Projects
               </a>
-              <a href="/resume.pdf" download className="btn-secondary">
+              <a href={resumeUrl} download className="btn-secondary">
                 Download Resume
               </a>
               <a href="#contact" className="btn-secondary">
