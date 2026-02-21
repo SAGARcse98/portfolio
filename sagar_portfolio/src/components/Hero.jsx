@@ -3,8 +3,8 @@ import sagar from "../assets/Swagar.jpg"
 import Reveal from "./Reveal"
 
 export default function Hero() {
-  const techChips = ["React", "Node.js", "CUDA", "OpenMP", "SLURM", "MongoDB"]
-  const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`
+  const techChips = ["Python","Javascript","ReactJs","React Native", "Node.js", "CUDA", "OpenMP","MPI","SLURM", "MongoDB"]
+  const resumeUrl = `${import.meta.env.BASE_URL}SagarChavhanRESUME.pdf`
 
   return (
     <Reveal>

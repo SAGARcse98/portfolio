@@ -1,5 +1,22 @@
 const projects = [
   {
+    title: "ExamPrep - Government Exam Prep Platform",
+    description:
+      "Built a focused preparation platform for Banking and SSC aspirants with structured video learning, downloadable PDFs, and current affairs updates.",
+    contributions: [
+      "Designed dedicated Banking and SSC learning tracks for structured preparation",
+      "Implemented video-first topic modules for concept clarity and faster revision",
+      "Created a PDF vault for formulas, notes, and offline practice sheets",
+      "Organized daily, weekly, and monthly current affairs for exam relevance",
+      "Built responsive UI flows for learners across desktop and mobile devices",
+    ],
+    techStack: ["React.js", "JavaScript", "Tailwind CSS", "Vercel"],
+    links: [
+      { label: "Live Demo", href: "https://exam-aspirant.vercel.app/" },
+      { label: "GitHub", href: "https://github.com/SAGARcse98/exam_aspirant" },
+    ],
+  },
+  {
     title: "TicketsQue - Event Management Platform",
     description:
       "Developed a full-stack event management and ticket booking platform supporting secure payments and real-time booking workflows.",
