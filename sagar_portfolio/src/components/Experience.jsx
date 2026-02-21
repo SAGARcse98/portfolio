@@ -12,7 +12,7 @@ const roles = [
   {
     company: "Adihptham Technology",
     title: "Frontend Developer",
-    period: "Jan 2022 - May 2023",
+    period: "Jan 2021 - May 2023",
     points: [
       "Built UI modules for the E-amantrana digital invitation platform",
       "Implemented QR and missed-call based event access journeys",
