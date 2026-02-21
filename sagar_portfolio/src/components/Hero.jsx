@@ -61,7 +61,7 @@ export default function Hero() {
             <div className="grid grid-cols-2 gap-3 mt-4">
               <div className="rounded-xl p-3 border border-[var(--border)] bg-[color:var(--surface-strong)]">
                 <p className="text-xs uppercase tracking-wide text-[color:var(--muted)]">Experience</p>
-                <p className="text-lg font-bold">2+ Years</p>
+                <p className="text-lg font-bold">3+ Years</p>
               </div>
               <div className="rounded-xl p-3 border border-[var(--border)] bg-[color:var(--surface-strong)]">
                 <p className="text-xs uppercase tracking-wide text-[color:var(--muted)]">Focus</p>

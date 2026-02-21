@@ -12,7 +12,7 @@ export default function About() {
       <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-6 items-start">
         <div className="card space-y-4 text-[color:var(--muted)]">
           <p>
-            I am a Frontend Developer with 2+ years of experience and hands-on exposure to
+            I am a Full Stack Developer with 3+ years of experience and hands-on exposure to
             High-Performance Computing (HPC). I specialize in building scalable React
             applications and optimizing compute-intensive workloads.
           </p>
