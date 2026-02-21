@@ -1,5 +1,5 @@
 import { motion as Motion } from "framer-motion"
-import sagar from "../assets/Swagar.jpg"
+import sagar from "../assets/DSC_6908.png"
 import Reveal from "./Reveal"
 
 export default function Hero() {
@@ -20,7 +20,7 @@ export default function Hero() {
               Hi, I'm <span className="text-cyan-600 dark:text-cyan-400">Sagar Chavhan</span>
             </h1>
             <h2 className="mt-3 text-xl md:text-2xl font-semibold text-[color:var(--muted)]">
-              Frontend Developer & HPC Enthusiast
+              Full Stack Developer & HPC Enthusiast
             </h2>
 
             <p className="mt-6 max-w-2xl text-lg text-[color:var(--muted)]">
