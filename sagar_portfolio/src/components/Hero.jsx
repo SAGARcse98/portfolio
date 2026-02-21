@@ -4,7 +4,7 @@ import Reveal from "./Reveal"
 
 export default function Hero() {
   const techChips = ["Python","Javascript","ReactJs","React Native", "Node.js", "CUDA", "OpenMP","MPI","SLURM", "MongoDB"]
-  const resumeUrl = `${import.meta.env.BASE_URL}SagarChavhanRESUME.pdf`
+  const resumeUrl = `${import.meta.env.BASE_URL}SagarChavhan%20RESUME.pdf`
 
   return (
     <Reveal>
