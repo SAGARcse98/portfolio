@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd sagar_portfolio && npm run build",
+  "outputDirectory": "sagar_portfolio/dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
