@@ -3,7 +3,7 @@ import sagar from "../assets/DSC_6908.png"
 import Reveal from "./Reveal"
 
 export default function Hero() {
-  const techChips = ["Python","Javascript","ReactJs","React Native", "Node.js", "CUDA", "OpenMP","MPI","SLURM", "MongoDB"]
+  const techChips = ["Python","AI/ML",",Javascript","ReactJs","React Native", "Node.js","GraphQL", "CUDA", "OpenMP","MPI","SLURM", "MongoDB","AWS"]
   const resumeUrl = `${import.meta.env.BASE_URL}SagarChavhan_RESUME_2026.pdf`
 
   return (
@@ -20,12 +20,12 @@ export default function Hero() {
               Hi, I'm <span className="text-cyan-600 dark:text-cyan-400">Sagar Chavhan</span>
             </h1>
             <h2 className="mt-3 text-xl md:text-2xl font-semibold text-[color:var(--muted)]">
-              Full Stack Developer & HPC Enthusiast
+              Full Stack Engineer & HPC AL/ML Enthusiast
             </h2>
 
             <p className="mt-6 max-w-2xl text-lg text-[color:var(--muted)]">
               I build high-performance web applications and parallel computing
-              solutions using React, CUDA, and OpenMP.
+              solutions using Python, React,AI/ML, AWS, CUDA, and OpenMP.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2.5">
@@ -61,11 +61,11 @@ export default function Hero() {
             <div className="grid grid-cols-2 gap-3 mt-4">
               <div className="rounded-xl p-3 border border-[var(--border)] bg-[color:var(--surface-strong)]">
                 <p className="text-xs uppercase tracking-wide text-[color:var(--muted)]">Experience</p>
-                <p className="text-lg font-bold">3+ Years</p>
+                <p className="text-lg font-bold">4+ Years</p>
               </div>
               <div className="rounded-xl p-3 border border-[var(--border)] bg-[color:var(--surface-strong)]">
                 <p className="text-xs uppercase tracking-wide text-[color:var(--muted)]">Focus</p>
-                <p className="text-lg font-bold">HPC + React</p>
+                <p className="text-lg font-bold">AIML and HPC + React</p>
               </div>
             </div>
           </Motion.div>

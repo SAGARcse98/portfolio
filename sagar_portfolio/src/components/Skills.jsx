@@ -20,15 +20,19 @@ const skillGroups = [
   },
   {
     title: "Frontend",
-    items: ["React.js", "Next.js", "Redux", "Context API", "HTML5", "CSS3", "Tailwind CSS"],
+    items: ["React.js", "Next.js", "React Native", "TypeScript", "Redux", "Context API", "HTML5", "CSS3", "Tailwind CSS"],
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express.js", "REST APIs"],
+    items: ["Node.js", "Express.js", "GraphQL", "REST APIs", "FastAPI", "Flask"],
   },
   {
     title: "Tools & Platforms",
-    items: ["Linux", "Git", "GitHub", "Debugging", "Profiling", "MongoDB"],
+    items: ["Linux", "Git", "GitHub", "Debugging", "Profiling", "MongoDB", "Firebase", "AWS Lambda", "AWS S3", "AWS API Gateway"],
+  },
+  {
+    title: "AI & Integration",
+    items: ["OpenAI API", "LLM Integration", "Prompt Engineering", "AI-assisted workflows", "Razorpay Integration"],
   },
 ]
 
