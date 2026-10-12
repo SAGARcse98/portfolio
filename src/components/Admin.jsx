@@ -13,6 +13,7 @@ export default function Admin() {
       setMessage({ ok: false, text: "Please choose a PDF file." })
       return
     }
+    const form = event.currentTarget
     setBusy(true)
     setMessage(null)
     try {
@@ -23,9 +24,9 @@ export default function Admin() {
       })
       const data = await res.json().catch(() => ({}))
       if (!res.ok) throw new Error(data.error || `Upload failed (${res.status})`)
-      setMessage({ ok: true, text: "Resume updated. The Download Resume button now serves this file." })
+      setMessage({ ok: true, text: "Resume updated! The Download Resume button now serves this file." })
       setFile(null)
-      event.currentTarget.reset()
+      form?.reset()
     } catch (err) {
       setMessage({ ok: false, text: err.message })
     } finally {
