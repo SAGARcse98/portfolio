@@ -42,14 +42,18 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "File is not a valid PDF" })
   }
 
-  const blob = await put("resume.pdf", body, {
-    access: "public",
-    contentType: "application/pdf",
-    addRandomSuffix: false,
-    allowOverwrite: true,
-    cacheControlMaxAge: 60,
-  })
-
-  return res.status(200).json({ ok: true, url: blob.url })
+  try {
+    const blob = await put("resume.pdf", body, {
+      access: "public",
+      contentType: "application/pdf",
+      addRandomSuffix: false,
+      allowOverwrite: true,
+      cacheControlMaxAge: 60,
+    })
+    return res.status(200).json({ ok: true, url: blob.url })
+  } catch (err) {
+    console.error("Blob upload failed:", err)
+    return res.status(500).json({ error: `Storage error: ${err?.message || "unknown"}` })
+  }
 }
 
