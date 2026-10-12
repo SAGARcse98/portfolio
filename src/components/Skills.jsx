@@ -1,7 +1,7 @@
 const skillGroups = [
   {
     title: "Programming",
-    items: ["C", "C++", "Python", "JavaScript (ES6)", "Shell Scripting"],
+    items: ["Python", "C++", "C", "JavaScript (ES6)", "Shell Scripting"],
   },
   {
     title: "HPC & Parallel Computing",
@@ -24,11 +24,11 @@ const skillGroups = [
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express.js", "GraphQL", "REST APIs", "FastAPI", "Flask"],
+    items: ["Node.js", "Express.js", "GraphQL", "MongoDB", "REST APIs"],
   },
   {
     title: "Tools & Platforms",
-    items: ["Linux", "Git", "GitHub", "Debugging", "Profiling", "MongoDB", "Firebase", "AWS Lambda", "AWS S3", "AWS API Gateway"],
+    items: ["Linux", "Git", "GitHub", "Debugging", "Profiling", "Firebase"],
   },
   {
     title: "AI & Integration",

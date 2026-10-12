@@ -10,8 +10,11 @@ import LookingFor from "./components/LookingFor"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import Reveal from "./components/Reveal"
+import Admin from "./components/Admin"
 
 export default function App() {
+  if (window.location.pathname.replace(/\/+$/, "") === "/admin") return <Admin />
+
   return (
     <>
       <Navbar />

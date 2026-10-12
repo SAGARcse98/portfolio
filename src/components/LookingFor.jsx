@@ -1,8 +1,13 @@
 export default function LookingFor() {
   const opportunities = [
-    "High Performance Computing (HPC)",
-    "Performance Engineering",
+    "Full Stack Development",
+    "Mobile Development",
+    "Backend Development",
     "Frontend Development",
+    "Data Scientist / Data Engineer",
+    "AI/ML Engineering",
+    "HPC & Parallel Programming",
+    "Performance Engineering",
     "Systems Programming",
   ]
 

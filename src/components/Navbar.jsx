@@ -3,7 +3,10 @@ import { useEffect, useMemo, useState } from "react"
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
+  { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
+  { href: "#education", label: "Education" },
+  { href: "#looking-for", label: "Hiring" },
   { href: "#contact", label: "Contact" },
 ]
 

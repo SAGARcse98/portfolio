@@ -1,10 +1,12 @@
 import { motion as Motion } from "framer-motion"
-import sagar from "../assets/DSC_6908.png"
+import sagar from "../assets/hero.jpg"
 import Reveal from "./Reveal"
 
 export default function Hero() {
-  const techChips = ["Python","AI/ML",",Javascript","ReactJs","React Native", "Node.js","GraphQL", "CUDA", "OpenMP","MPI","SLURM", "MongoDB","AWS"]
-  const resumeUrl = `${import.meta.env.BASE_URL}SagarChavhan_RESUME_2026.pdf`
+  const techChips = ["Python","AI/ML","JavaScript","ReactJs","React Native", "Node.js","GraphQL", "CUDA", "OpenMP","MPI","SLURM", "MongoDB"]
+  const resumeUrl = import.meta.env.DEV
+    ? `${import.meta.env.BASE_URL}SagarChavhan_RESUME_2026.pdf`
+    : "/api/resume"
 
   return (
     <Reveal>
@@ -20,12 +22,11 @@ export default function Hero() {
               Hi, I'm <span className="text-cyan-600 dark:text-cyan-400">Sagar Chavhan</span>
             </h1>
             <h2 className="mt-3 text-xl md:text-2xl font-semibold text-[color:var(--muted)]">
-              Full Stack Engineer & HPC AL/ML Enthusiast
+              Full Stack Engineer & HPC & AI/ML Enthusiast
             </h2>
 
             <p className="mt-6 max-w-2xl text-lg text-[color:var(--muted)]">
-              I build high-performance web applications and parallel computing
-              solutions using Python, React,AI/ML, AWS, CUDA, and OpenMP.
+              I build high-performance web applications and Mobile applications using Python, Javascript, React, React Native, TypeScript, AI/ML, CUDA, and OpenMP.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2.5">
@@ -61,11 +62,11 @@ export default function Hero() {
             <div className="grid grid-cols-2 gap-3 mt-4">
               <div className="rounded-xl p-3 border border-[var(--border)] bg-[color:var(--surface-strong)]">
                 <p className="text-xs uppercase tracking-wide text-[color:var(--muted)]">Experience</p>
-                <p className="text-lg font-bold">4+ Years</p>
+                <p className="text-lg font-bold">1.5 Years</p>
               </div>
               <div className="rounded-xl p-3 border border-[var(--border)] bg-[color:var(--surface-strong)]">
                 <p className="text-xs uppercase tracking-wide text-[color:var(--muted)]">Focus</p>
-                <p className="text-lg font-bold">AIML and HPC + React</p>
+                <p className="text-lg font-bold">Full Stack and Mobile Development</p>
               </div>
             </div>
           </Motion.div>

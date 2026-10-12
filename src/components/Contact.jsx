@@ -10,7 +10,7 @@ export default function Contact() {
     const name = String(formData.get("name") || "").trim()
     const email = String(formData.get("email") || "").trim()
     const message = String(formData.get("message") || "").trim()
-    const recipients = "sagarsc01@gmail.com,cse.sagarchavhan@gmail.com"
+    const recipients = "cse.sagarsc01@gmail.com,cse.sagarchavhan@gmail.com"
     const subject = encodeURIComponent(`Portfolio Contact from ${name || "Website Visitor"}`)
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)
 
@@ -24,7 +24,7 @@ export default function Contact() {
       <div className="section-header">
         <span className="section-kicker">Connect</span>
         <h2 className="section-title">Contact</h2>
-        <p className="section-subtitle">Let's discuss frontend, HPC, and performance-focused roles.</p>
+        <p className="section-subtitle">Let's discuss Full Stack, HPC, and performance-focused roles.</p>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-5">
@@ -40,14 +40,14 @@ export default function Contact() {
             <p className="flex items-start gap-3">
               <FiMail className="mt-1 text-cyan-600 dark:text-cyan-400" />
               <span>
-                <strong>Email:</strong> <a href="mailto:sagarsc01@gmail.com">sagarsc01@gmail.com</a>
+                <strong>Email:</strong> <a href="mailto:cse.sagarchavhan@gmail.com">cse.sagarchavhan@gmail.com</a>
               </span>
             </p>
             <p className="flex items-start gap-3">
               <FiMail className="mt-1 text-cyan-600 dark:text-cyan-400" />
               <span>
                 <strong>Alternate Email:</strong>{" "}
-                <a href="mailto:cse.sagarchavhan@gmail.com">cse.sagarchavhan@gmail.com</a>
+                <a href="mailto:sagarsc01@gmail.com">sagarsc01@gmail.com</a>
               </span>
             </p>
             <p className="flex items-start gap-3">
