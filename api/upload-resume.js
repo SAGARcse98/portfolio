@@ -44,7 +44,7 @@ export default async function handler(req, res) {
 
   try {
     const blob = await put("resume.pdf", body, {
-      access: "public",
+      access: "private",
       contentType: "application/pdf",
       addRandomSuffix: false,
       allowOverwrite: true,
